@@ -20,6 +20,7 @@ ALLOWED_ORIGINS=https://interview-wednesday.vercel.app,http://localhost:5173
 6. Render will automatically redeploy your backend with the new CORS configuration
 
 ### Notes
+
 - `ALLOWED_ORIGINS` accepts a comma-separated list of allowed origins
 - Always include your production frontend URL(s) in `ALLOWED_ORIGINS`
 - Keep `http://localhost:5173` for local development testing
@@ -37,6 +38,7 @@ VITE_API_BASE_URL=https://interview-wednesday.onrender.com/api/v1
 ### Redeploy
 
 If you need to redeploy:
+
 ```bash
 git push origin main
 ```
