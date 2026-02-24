@@ -19,4 +19,7 @@ export const env = {
     process.env.OPENWEATHER_BASE_URL ||
     'https://api.openweathermap.org/data/2.5',
   clientUrl: process.env.CLIENT_URL || 'http://localhost:5173',
+  allowedOrigins: process.env.ALLOWED_ORIGINS
+    ? process.env.ALLOWED_ORIGINS.split(',').map((origin) => origin.trim())
+    : ['http://localhost:5173', 'https://interview-wednesday.vercel.app'],
 };

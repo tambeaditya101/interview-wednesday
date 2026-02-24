@@ -40,7 +40,8 @@ Set the values in `backend/.env`:
 
 - `MONGODB_URI`
 - `OPENWEATHER_API_KEY`
-- `CLIENT_URL`
+- `CLIENT_URL` (for backward compatibility)
+- `ALLOWED_ORIGINS` (comma-separated list of allowed frontend origins, e.g., `http://localhost:5173,https://your-app.vercel.app`)
 
 ### 2) Frontend
 
